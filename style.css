@@ -1,0 +1,421 @@
+/* Reset dan Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background dan Layout Utama */
+body {
+    background-color: #f2f2f2; /* Warna latar belakang */
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #1e90ff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px ;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+/* Styling untuk Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Memastikan profil ada di sebelah kiri */
+
+}
+
+.profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid gold;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.profile span {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Styling untuk Link Navbar */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+/* Section Utama */
+main {
+    margin-top: 50px; /* Spasi agar tidak tertutup navbar */
+}
+
+/* Tentang saya */
+section {
+    min-height: 100vh;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background-color: #f2f2f2; /* Warna latar belakang */
+
+}
+
+/* Styling Section 'Tentang Saya' */
+#me .me-section {
+    background-color: #f2f2f2; /* Warna latar belakang */
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+}
+
+/* Konten utama */
+#me .me-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    flex-direction: row-reverse; /* Mengatur foto ke kiri dan teks ke kanan */
+}
+
+/* Styling Teks */
+#me .me-text {
+    max-width: 600px;
+}
+
+#me .me-text h2 {
+    font-size: 1.5em;
+    color: #FFA500; /* Warna teks oranye */
+    font-weight: bold;
+    margin: 0;
+}
+
+#me .me-text h1 {
+    font-size: 3em;
+    color: #1E3A8A; /* Warna teks biru */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#me .me-text p {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Styling Ikon */
+#me .icons img {
+    width: 30px;
+    margin: 5px;
+}
+#me .photo img {
+    width: 300px; /* Atur ukuran gambar sesuai kebutuhan */
+    height: auto; /* Menjaga rasio aspek gambar */
+    margin-right: 20px; /* Memberi jarak antara gambar dan teks */
+    border-radius: 5%;  
+    border: 3px solid #1d32ac;
+}
+
+/* Posisi dan ukuran elemen dekoratif */
+.me-section::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 170px;
+    height: 550px;
+    background-color: #FFA500; /* Warna kotak oranye */
+    border-radius: 5px;
+}
+
+.about-section .about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    flex-wrap: wrap; /* Agar tetap rapi di layar kecil */
+}
+
+/* Untuk foto profil di sebelah kanan */
+.about-section .about-content .photo {
+    border-radius: 10%;   
+    order: 2; /* Agar foto tampil di sebelah kanan */
+}
+
+.about-section .about-content .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Untuk teks di sebelah kiri */
+.about-section .about-content .about-text {
+    max-width: 500px;
+    order: 2; /* Agar teks tampil di sebelah kiri */
+}
+
+.about-section .about-content .about-text h1 {
+    font-size: 2em;
+    color: #1e90ff;
+    margin-bottom: 10px;
+}
+
+.about-section .about-content .about-text p {
+    margin: 2px 0;
+    line-height: 1.6;
+}
+.about-section .about-content .about-text h1::before {
+    content: '';
+    position: absolute; 
+    margin-top: 300px;
+    margin-left: 1px;  
+    width: 300px;
+    height: 300px;
+    background-color: #FFA500; /* Warna kotak oranye */
+    border-radius: 100%;
+}
+.about-section::after {
+    content: '';
+    right: "";    
+    width: 170px;
+    height: 170px;
+    background-color: #FFA500; /* Warna kotak oranye */
+    border-radius: 100%;
+}
+
+/* Pendidikan */
+#education {
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+#education .education-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1000px;
+    flex-wrap: wrap; /* Agar tetap rapi di layar kecil */
+}
+
+/* Gambar di sebelah kiri */
+#education .education-image {
+    max-width: 500px;
+    border-radius: 2px;
+    
+}
+
+#education .education-image img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Teks di sebelah kanan */
+#education .education-text {
+    max-width: 500px;
+}
+
+#education .education-text h1 {
+    font-size: 2em;
+    color: #1e90ff;
+    margin-bottom: 10px;
+}
+
+#education .education-text p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+.highlighted-list {
+    list-style-type: none; /* Menghilangkan bullet */
+    padding: 0; /* Menghilangkan padding default */
+    text-align: center;
+    font-weight: bold;
+    color: #1e90ff;
+}
+
+.highlighted-list li {
+    border: 3px solid #FFA500; /* Garis kotak warna kuning */
+    margin: 10px 0; /* Jarak antar item */
+    padding: 10px; /* Ruang dalam kotak */
+    border-radius: 100px; /* Sudut kotak yang sedikit melengkung */
+    width: 380px;
+    margin-left: 70px;
+}
+
+
+/* Bagian umum */
+#experience {
+    min-height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#experience h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+#experience .experience-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Membuat dua kolom */
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Kotak biru untuk tiap pengalaman */
+#experience .experience-item {
+    background-color: #FFA500; /* Warna biru */
+    color: #000000; /* Warna teks putih */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(5, 0, 0, 0.1);
+    font-size: 1em;
+    text-align: left;
+}
+
+#experience .experience-item b {
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/* Section Skills */
+#skills {
+    min-height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#skills h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Grid Layout untuk Skill */
+#skills .skills-grid {
+    display: flex;
+    flex-wrap: wrap; /* Membuat elemen baru berpindah ke baris baru */
+    justify-content: center; /* Meratakan elemen di tengah */
+}
+
+#skills .skill-item {
+    flex: 1 1 calc(33.33% - 30px); /* Mengatur lebar item dengan margin */
+    margin: 15px; /* Mengatur jarak antar item */
+    box-sizing: border-box; /* Agar padding dan margin tidak mempengaruhi ukuran */
+}
+
+
+/* Styling untuk setiap item skill */
+#skills .skill-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    border: 8px solid #FFA500;
+    object-fit: cover;
+}
+#contacts {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacts h1 {
+    color: #000000;
+    margin-bottom: 20px; /* Memberi jarak antara judul dan grid kontak */
+}
+
+.contacts-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item img {
+    width: 250px;
+    height: 250px;
+    background-color: #d6f083; /* Warna background untuk menggantikan icon */
+    border: 5px solid #ffc107; /* Warna border */
+    border-radius: 10px;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #1e90ff;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 70px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: regular;
+}
+
+.contact-button:hover {
+    background-color: #1e90ff;
+}
+
+/* Footer */
+footer {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
